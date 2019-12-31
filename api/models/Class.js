@@ -1,4 +1,5 @@
 'use strict';
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -26,4 +27,5 @@ var ClassSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('Classes', ClassSchema);
+const Class = mongoose.model('Class', ClassSchema);
+export default Class;

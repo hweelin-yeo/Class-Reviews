@@ -1,4 +1,5 @@
 'use strict';
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -24,12 +25,6 @@ var ReviewSchema = new Schema({
     type: Number
   }
 
-  summmaryKeywords: {
-    type: [{
-      type: String
-    }]
-  }
-
 });
 
-module.exports = mongoose.model('Reviews', ReviewSchema);
+module.exports = mongoose.model('Review_Model', ReviewSchema);
