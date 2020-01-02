@@ -21,11 +21,14 @@ var ClassSchema = new Schema({
     required: 'Full name of the class (department & number)'
   },
 
-  overallRating: {
+  overallQualityRating: {
+    type: Number
+  }
+
+  overallDifficultyRating: {
     type: Number
   }
 
 });
 
-const Class = mongoose.model('Class', ClassSchema);
-export default Class;
+module.exports = mongoose.model('Class_Model', ClassSchema);

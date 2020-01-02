@@ -8,21 +8,30 @@ var ReviewSchema = new Schema({
   
   department: {
     type: String,
-    required: 'Department of the class'
+    required: true
   },
 
   classNum: {
     type: String,
-    required: 'Class number (department & number)'
+    required: true
   },
 
   className: {
     type: String,
-    required: 'Full name of the class (department & number)'
+    required: true
   },
 
-  rating: {
+  qualityRating: {
     type: Number
+  },
+
+  difficultyRating: {
+    type: Number
+  },
+
+  reviewText: {
+    type: String,
+    required: true
   }
 
 });
