@@ -6,6 +6,15 @@ var express = require('express'),
   mongoose = require('mongoose'), 
   bodyParser = require('body-parser');
 
+  // var users = require('./routes/users');
+
+
+app.use(express.static('public'));
+
+app.get('/login',function(req,res) {
+  res.sendFile('public/login.html' , { root : __dirname});
+});
+
 // - DB: Mongoose Instance Connection URL
 
 // mongoose.Promise = global.Promise;

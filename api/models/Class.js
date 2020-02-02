@@ -23,7 +23,7 @@ var ClassSchema = new Schema({
 
   overallQualityRating: {
     type: Number
-  }
+  },
 
   overallDifficultyRating: {
     type: Number
